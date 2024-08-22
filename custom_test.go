@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/regen-network/gocuke"
+	"github.com/yendo-eng/gocuke"
 )
 
 func TestCustomSteps(t *testing.T) {

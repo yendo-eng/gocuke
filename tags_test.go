@@ -7,7 +7,7 @@ import (
 	tagexpressions "github.com/cucumber/tag-expressions/go/v6"
 	"gotest.tools/v3/assert"
 
-	"github.com/regen-network/gocuke/internal/tag"
+	"github.com/yendo-eng/gocuke/internal/tag"
 )
 
 func TestTags(t *testing.T) {

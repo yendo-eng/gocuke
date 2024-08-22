@@ -5,6 +5,7 @@ import (
 	"reflect"
 	"regexp"
 	"runtime"
+	"sync"
 	"testing"
 
 	"gotest.tools/v3/assert"
@@ -12,6 +13,7 @@ import (
 
 type stepDef struct {
 	regex       *regexp.Regexp
+	regexMutex  *sync.RWMutex
 	theFunc     reflect.Value
 	specialArgs []*specialArg
 	funcLoc     string
@@ -75,9 +77,10 @@ func (r *Runner) newStepDefOrHook(t *testing.T, exp *regexp.Regexp, f reflect.Va
 	file, line := rfunc.FileLine(funcPtr)
 
 	def := &stepDef{
-		regex:   exp,
-		theFunc: f,
-		funcLoc: fmt.Sprintf("%s (%s:%d)", rfunc.Name(), file, line),
+		regex:     	exp,
+		regexMutex: &sync.RWMutex{},
+		theFunc:   	f,
+		funcLoc:   	fmt.Sprintf("%s (%s:%d)", rfunc.Name(), file, line),
 	}
 
 	for i := 0; i < typ.NumIn(); i++ {

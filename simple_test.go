@@ -3,7 +3,7 @@ package gocuke_test
 import (
 	"testing"
 
-	"github.com/regen-network/gocuke"
+	"github.com/yendo-eng/gocuke"
 )
 
 func TestSimple(t *testing.T) {

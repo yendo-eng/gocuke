@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/regen-network/gocuke"
+	"github.com/yendo-eng/gocuke"
 )
 
 // Server implements http.Server

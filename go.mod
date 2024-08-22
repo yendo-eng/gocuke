@@ -1,4 +1,4 @@
-module github.com/regen-network/gocuke
+module github.com/yendo-eng/gocuke
 
 go 1.21
 

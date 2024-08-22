@@ -3,7 +3,7 @@ package datatable
 import (
 	"testing"
 
-	"github.com/regen-network/gocuke"
+	"github.com/yendo-eng/gocuke"
 	"gotest.tools/v3/assert"
 )
 

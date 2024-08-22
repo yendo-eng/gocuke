@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/regen-network/gocuke"
+	"github.com/yendo-eng/gocuke"
 )
 
 // should recursively load scenarios from features directory

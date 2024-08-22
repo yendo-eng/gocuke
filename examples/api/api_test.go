@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/regen-network/gocuke"
+	"github.com/yendo-eng/gocuke"
 )
 
 type suite struct {

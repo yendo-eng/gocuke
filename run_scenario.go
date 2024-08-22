@@ -7,7 +7,7 @@ import (
 	messages "github.com/cucumber/messages/go/v22"
 	"pgregory.net/rapid"
 
-	"github.com/regen-network/gocuke/internal/tag"
+	"github.com/yendo-eng/gocuke/internal/tag"
 )
 
 func (r *docRunner) runScenario(t *testing.T, pickle *messages.Pickle, verbose bool) {
