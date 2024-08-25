@@ -34,7 +34,6 @@ func TestSimpleNonPointer(t *testing.T) {
 	gocuke.
 		NewRunner(t, simpleSuiteNP{}).
 		Path("examples/simple/simple.feature").
-		NonParallel().
 		Run()
 }
 
